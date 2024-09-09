@@ -11,7 +11,7 @@ config.font = wezterm.font("FiraCode Nerd Font Mono")
 config.font_size = 12
 
 config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 
 config.colors = {
 	foreground = "#FBF1C7",
