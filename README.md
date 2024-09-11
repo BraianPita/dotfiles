@@ -9,6 +9,7 @@ My dotfiles
 1. Install zsh 
 ```
 sudo apt install zsh
+chsh $USER
 ```
 
 2. Install ohmyposh
