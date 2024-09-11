@@ -1,3 +1,7 @@
+# PATH
+path+=('/home/bpita/.local/bin')
+path+=('/opt/nvim-linux64/bin')
+path+=('/home/bpita/.fzf/bin')
 
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
@@ -37,7 +41,7 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/main.toml)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/main.toml)"
 
 # Keybindings
 bindkey -e
@@ -69,7 +73,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
+alias cd='z'
 
 # Shell integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
