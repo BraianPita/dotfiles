@@ -27,5 +27,10 @@ config.colors = {
 
 config.window_background_opacity = 0.9
 
+-- Windows setup
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = { "powershell.exe", "-nol" }
+end
+
 -- and finally, return the configuration to wezterm
 return config
