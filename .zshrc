@@ -1,7 +1,7 @@
 # PATH
-path+=('/home/bpita/.local/bin')
-path+=('/opt/nvim-linux64/bin')
-path+=('/home/bpita/.fzf/bin')
+path+=("$HOME/.local/bin")
+path+=("/opt/nvim-linux64/bin")
+path+=("$HOME/.fzf/bin")
 
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
